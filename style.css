@@ -9,4 +9,8 @@ ul {
     counter-increment: section;
     content: counters(section,".") ". "; }
 
+    img {
+      max-width: 800px;
+    }
+
 /*# sourceMappingURL=style.css.map */

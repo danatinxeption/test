@@ -12,86 +12,90 @@
 	<body>
 		<h1>The problems</h1>
 		<h2>HTML/CSS</h2>
-		<h3>Part One</h3>
-		<p>
-			Follow the instruction below, try to match the final site to the
-			screenshots for the follow devices: iPhone X, iPad, Desktop (1280 x
-			1080), Desktop (3440 x 1440).
-		</p>
-		<p>
-			You can get the images used in the example
-			<a href="https://github.com/danatinxeption/test" target="_blank"
-				>here</a
-			>.
-		</p>
-		<ul>
-			<li>
-				Create a website that works from 3440px (ultrawide monitor) to
-				375px (mobile device)
-			</li>
-			<li>
-				The site should have a max width of 1440px and the site is
-				centered on the page
-			</li>
-			<li>
-				The site supports background bleeding to the edge of the screen
-				for different sections
-			</li>
-			<li>
-				<a target="_blank" href="/localhost_8000_site_wide.jpg"
-					>Ultrawide Desktop</a
-				>,
-				<a target="_blank" href="/localhost_8000_site.jpg"
-					>Standard Desktop</a
-				>,
-				<a target="_blank" href="/localhost_8000_site_iPad.jpg"
-					>Tablet</a
-				>,
-				<a target="_blank" href="/localhost_8000_site_iPhone_X.jpg"
-					>Mobile</a
-				>
-			</li>
-			<li>
-				Don't need to worry about browser compatibility, just need to
-				make sure your code works in the latest version of Chrome, Edge,
-				Firefox, and Safari. You can use any experimental html/css
-				feature you want.
-			</li>
-			<li>
-				Please try to solve this problem without using any css
-				frameworks (no material-ui, bookstrap, foundation, tailwind,
-				etc.). If you can use sass/less preprocessor, please do so and
-				keep the source file in the project.
-			</li>
-		</ul>
-		<h3>Part Two</h3>
-		<p>Create a rainbow border around a square.</p>
-		<img src="rainbow-border.png" alt="Rainbow border around a box."/>
-		<p>Create a skeleton loading element using only html and css.</p>
-		<img src="skeleton loading.gif" alt="Skeleton loading elements."/>
-		<h2>Javascript</h2>
-		<h3>Part One</h3>
-		<ul>
-			<li>
-				Go to
-				<a
-					target="_blank"
-					href="https://public.opendatasoft.com/explore/?sort=modified"
-					>https://public.opendatasoft.com/explore/?sort=modified</a
-				>, find dataset for PM2.5 in the United States.
-			</li>
-			<li>Generate a table for the first ten rows of the dataset.</li>
-		</ul>
-		<h3>Part Two</h3>
-		<p>Use the rainbow border element created above, add javascript to spin the border around the square on page scroll.</p>
-		<img src="spinning border.gif" alt="Spinning border around a square element."/>
-		<h2>Performance</h2>
-		<ul>
-			<li>Utilize different methods to enhance site load speed.</li>
-		</ul>
-		<h2>Bonus Point</h2>
-		<ul>
-			<li>Show a stacked cards view for the table generated in Javascript Part One on mobile device.</li>
-		</ul>
+		<h3>Center a Div</h3>
+		<ol>
+			<li>Create a div which takes up the entire viewport</li>
+			<li>Give it a solid background color</li>
+			<li>Add another child div and put in some text</li>
+			<li>Center the child div in the middle of the page</li>
+		</ol>
+		<h4>Example</h4>
+		<img src="center-div.jpg" alt="Center a Div"/>
+		<h3>Create a table layout and add a tooltip for each cell</h3>
+		<ol>
+			<li>Create a table using div, the table should take up the entire viewport</li>
+			<li>Add 50px padding around the table, make sure no horizontal scrollbar is being initialized because of the padding.</li>
+			<li>There should be three equal sized columns in the table in all the viewport sizes.</li>
+			<li>Table cells have a 1px border, space between table should be 50px.</li>
+			<li>Add a tooltip to the top right of each of the cell</li>
+		</ol>
+		<h4>Example</h4>
+		<img src="table.jpg" alt="Table and tooltips"/>
+		<h2>JavaScript</h2>
+		<h3>Populating table with data</h3>
+		<ol>
+			<li>Create a table using the data below</li>
+			<li>Please try to make the table as user friendly as possible</li>
+		</ol>
+		<code>
+			<pre>
+			var data = [
+				{
+					"datasetid":"euro-exchange-rates",
+					"recordid":"43f5940bfd6881b2f8e0c434a3a96f229a8a1054",
+					"fields":{
+						"date":"2022-03-06",
+						"currency":"USD",
+						"rate":1.0929
+						}
+					},
+				{
+					"datasetid":"euro-exchange-rates",
+					"recordid":"1787f87bcf029a223e001d6f88750fe0ca6772d1",
+					"fields":{
+						"date":"2022-03-06",
+						"currency":"AUD",
+						"rate":1.4872
+					}
+				},
+				{
+					"datasetid":"euro-exchange-rates",
+					"recordid":"756f0f685431156ad1d3bc24b91d574c5a6f00fa",
+					"fields":{
+						"date":"2022-03-06",
+						"currency":"CAD",
+						"rate":1.3937
+					}
+				},
+				{
+					"datasetid":"euro-exchange-rates",
+					"recordid":"58e15a0abb6fc40d08a10ae0f58fc2c9525b267a",
+					"fields":{
+						"date":"2022-03-06",
+						"currency":"GBP",
+						"rate":0.8238800000000001
+					}
+				},
+				{
+					"datasetid":"euro-exchange-rates",
+					"recordid":"4f7879e2c8e97bc11ae065f748a2e13f2cd73c71",
+					"fields":{
+						"date":"2022-03-06",
+						"currency":"SEK",
+						"rate":10.7935
+					}
+				},
+				{
+					"datasetid":"euro-exchange-rates",
+					"recordid":"e3f948548d1479dff8b10aeaaf0c247e17b70897",
+					"fields":{
+						"date":"2022-03-06",
+						"currency":"MXN",
+						"rate":22.7543
+					}
+				}
+			]
+		</pre>
+		</code>
 	</body>
 </html>
