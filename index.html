@@ -1,101 +1,89 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Interview Tests</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-	</head>
-	<body>
-		<h1>The problems</h1>
-		<h2>HTML/CSS</h2>
-		<h3>Center a Div</h3>
-		<ol>
-			<li>Create a div which takes up the entire viewport</li>
-			<li>Give it a solid background color</li>
-			<li>Add another child div and put in some text</li>
-			<li>Center the child div in the middle of the page</li>
-		</ol>
-		<h4>Example</h4>
-		<img src="center-div.jpg" alt="Center a Div"/>
-		<h3>Create a table layout and add a tooltip for each cell</h3>
-		<ol>
-			<li>Create a table using div, the table should take up the entire viewport</li>
-			<li>Add 50px padding around the table, make sure no horizontal scrollbar is being initialized because of the padding.</li>
-			<li>There should be three equal sized columns in the table in all the viewport sizes.</li>
-			<li>Table cells have a 1px border, space between table should be 50px.</li>
-			<li>Add a tooltip to the top right of each of the cell</li>
-		</ol>
-		<h4>Example</h4>
-		<img src="table.jpg" alt="Table and tooltips"/>
-		<h2>JavaScript</h2>
-		<h3>Populating table with data</h3>
-		<ol>
-			<li>Create a table using the data below</li>
-			<li>Please try to make the table as user friendly as possible</li>
-		</ol>
-		<code>
-			<pre>
-			var data = [
-				{
-					"datasetid":"euro-exchange-rates",
-					"recordid":"43f5940bfd6881b2f8e0c434a3a96f229a8a1054",
-					"fields":{
-						"date":"2022-03-06",
-						"currency":"USD",
-						"rate":1.0929
-						}
-					},
-				{
-					"datasetid":"euro-exchange-rates",
-					"recordid":"1787f87bcf029a223e001d6f88750fe0ca6772d1",
-					"fields":{
-						"date":"2022-03-06",
-						"currency":"AUD",
-						"rate":1.4872
-					}
-				},
-				{
-					"datasetid":"euro-exchange-rates",
-					"recordid":"756f0f685431156ad1d3bc24b91d574c5a6f00fa",
-					"fields":{
-						"date":"2022-03-06",
-						"currency":"CAD",
-						"rate":1.3937
-					}
-				},
-				{
-					"datasetid":"euro-exchange-rates",
-					"recordid":"58e15a0abb6fc40d08a10ae0f58fc2c9525b267a",
-					"fields":{
-						"date":"2022-03-06",
-						"currency":"GBP",
-						"rate":0.8238800000000001
-					}
-				},
-				{
-					"datasetid":"euro-exchange-rates",
-					"recordid":"4f7879e2c8e97bc11ae065f748a2e13f2cd73c71",
-					"fields":{
-						"date":"2022-03-06",
-						"currency":"SEK",
-						"rate":10.7935
-					}
-				},
-				{
-					"datasetid":"euro-exchange-rates",
-					"recordid":"e3f948548d1479dff8b10aeaaf0c247e17b70897",
-					"fields":{
-						"date":"2022-03-06",
-						"currency":"MXN",
-						"rate":22.7543
-					}
-				}
-			]
-		</pre>
-		</code>
-	</body>
+
+<head>
+	<title>Exercises</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<h1>The problems</h1>
+	<p><strong>For the CSS used in this project, please make sure to not use any CSS frameworks like Boostrap, Tailwind, Foundation, etc.</strong></p>
+	<h2>Project Setup</h2>
+	<ol>
+		<li>Create a NextJS app with TypeScript.</li>
+		<li>Set up SASS project in the app.</li>
+		<li>Create four routes:
+			<ol type="a">
+				<li><strong>/</strong> - Application homepage.</li>
+				<li><strong>/center-a-div</strong> - Page for exercise one.</li>
+				<li><strong>/table</strong> - Page for exercise two.</li>
+				<li><strong>/javascript</strong> - Page for exercise three.</li>
+			</ol>
+		</li>
+		<li>Bonus point for using dynamic routing to handle some or all four pages above.</li>
+	</ol>
+	<h2>Exercises One - Center a DIV</h2>
+	<ol>
+		<li>Create a div that takes up the entire viewport width and height.</li>
+		<li>Give it a solid background color.</li>
+		<li>Add a child element with <strong>"Center This"</strong> text.</li>
+		<li>Center the element above in the middle of the page, both horizontal and vertically.</li>
+		<li>Use as little html/css as possible.</li>
+		<li>Bonus point for completing this exercise with multiple methods.</li>
+	</ol>
+	<h4>Example</h4>
+	<img src="center-div.jpg" alt="Center a Div" />
+	<h2>Exercise Two - Table layout</h2>
+	<ol>
+		<li>Create a three by four layout.
+			<ol type="a">
+				<li>On viewport > 1280px, the layout is 3 x 4.</li>
+				<li>On viewport > 650px and < 1279px, the layout changes to 2 x 6.</li>
+				<li>On viewport < 650px, the layout changes to 1 x 12.</li>
+			</ol>
+		</li>
+		<li>Around the layout, there should be a 50px gap to the edge of the screen.</li>
+		<li>The cell width in all the viewport sizes. The cell height be at least 100px.</li>
+		<li>The space between the cells should be 50px, both horizontal and vertical.</li>
+		<li>Add a tooltip at the top right corner of each element.
+			<ol type="a">
+				<li>The tooltips should only be visible on hover of the cell it attaches to.</li>
+			</ol>
+		</li>
+	</ol>
+	<h4>Example</h4>
+	<img src="table.jpg" alt="Table and tooltips" />
+	<h2>Exercise Three - Javascript</h2>
+	<h3>Getting the data</h3>
+	<ol>
+		<li>Use this free data api endpoint documentation: https://docs.irail.be/</li>
+		<li>Get all the train stations from Belgium Public Transport api endpoint.</li>
+	</ol>
+	<h3>Using the data</h3>
+	<ol>
+		<li>Create a table.</li>
+		<li>The table columns should be dynamically generated using the train stations data.</li>
+		<li>The columns should be Name, Latitude, Longitude.</li>
+		<li>Add a note column as the last column in the table.</li>
+		<li>In the table row, display the train station data in the table cell. For the note column, add an input field and ability to type notes for each row.</li>
+		<li>Bonus points:
+			<ol type="a">
+				<li>Creating a link to google maps using the latitude and longitude information and make the name a link, also open the link in a new tab.</li>
+				<li>Add search functionality.</li>
+				<li>Add sort functionality.</li>
+			</ol>
+		</li>
+		
+	</ol>
+</body>
+
 </html>
