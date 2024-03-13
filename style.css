@@ -54,3 +54,17 @@ ol {
 img {
   max-width: 800px;
 }
+
+.warning-message {
+  display: flex;
+  align-items: center;
+  span {
+    margin-bottom: unset;
+    margin-right: 10px;
+    font-size: 40px;
+    color: #ff9900;
+  }
+  strong {
+    max-width: 800px;
+  }
+}
